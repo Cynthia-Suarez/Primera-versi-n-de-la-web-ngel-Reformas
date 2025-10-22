@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ángel Reformas - Reformas Integrales en Bilbao</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="reformas integrales, albañilería, carpintería, baños, cocinas, impermeabilización, caseríos, Bilbao"
+        name="keywords" />
+    <meta
+        content="Ángel Reformas: reformas integrales en Bilbao. Albañilería, carpintería, especialistas en baños y cocinas, caseríos e impermeabilización de tejados."
+        name="description" />
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet (AZUL/GRIS) -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Ajustes rápidos sin tocar el template -->
+    <style>
+        /* Logo más grande y visible en navbar */
+        .navbar-brand .brand-wrap {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand img.logo {
+            height: 56px;
+            width: auto;
+            margin-right: 12px;
+        }
+
+        .navbar-brand .brand-text {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: .5px;
+            color: #fff;
+        }
+
+        /* Topbar tipografía */
+        .topbar-item small {
+            display: block;
+            line-height: 1.1;
+        }
+
+        /* Carrusel: asegurar overlay oscuro para legibilidad */
+        .carousel-caption {
+            background: rgba(15, 23, 42, .55);
+            padding: 24px;
+            border-radius: 8px;
+        }
+
+        /* Botón CTA del header */
+        .carousel .btn {
+            font-weight: 700;
+        }
+
+        /* Botón WhatsApp flotante */
+        .whatsapp-float {
+            position: fixed;
+            width: 56px;
+            height: 56px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            z-index: 1000;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, .2);
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        /* “Banda” CTA que en el original era naranja: forzamos a azul */
+        .footer-shape,
+        .btn-primary,
+        .bg-primary {
+            background-color: var(--primary) !important;
+        }
+
+        .text-primary {
+            color: var(--secondary) !important;
+        }
+
+        /* Filtros del portfolio: que no se corten */
+        #portfolio-flters>li {
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Imágenes del portfolio responsive consistentes */
+        .portfolio-box img {
+            object-fit: cover;
+            height: 320px;
+        }
+
+        @media (max-width: 576px) {
+            .navbar-brand img.logo {
+                height: 46px;
+            }
+
+            .portfolio-box img {
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid px-5 d-none d-lg-block">
+        <div class="row gx-5">
+            <div class="col-lg-4 text-center py-3">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
+                    <div class="text-start topbar-item">
+                        <h6 class="text-uppercase fw-bold">Nuestra Oficina</h6>
+                        <small>Fika 50, Bajos B, 48006 Bilbao, Bizkaia</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center border-start border-end py-3">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
+                    <div class="text-start topbar-item">
+                        <h6 class="text-uppercase fw-bold">Email</h6>
+                        <small>contacto@angelreformasbinacional.es</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center py-3">
+                <div class="d-inline-flex align-items-center">
+                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
+                    <div class="text-start topbar-item">
+                        <h6 class="text-uppercase fw-bold">Teléfonos</h6>
+                        <small>+34 614 027 889 · +34 614 021 558</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- WhatsApp flotante -->
+    <a class="whatsapp-float" href="https://wa.me/34614027889" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top bg-dark bg-light-radial shadow-sm px-5 pe-lg-0">
+        <nav class="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand">
+                <span class="brand-wrap">
+                    <img src="img/logo-angelreformas.png" alt="Ángel Reformas" class="logo" />
+                    <span class="brand-text">ÁNGEL REFORMAS</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                    <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
+                    <a href="service.html" class="nav-item nav-link">Servicios</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="project.html" class="dropdown-item">Proyectos</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonios</a>
+                            <!-- Eliminados: Team, Blog, Detail -->
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    <a href="contact.html"
+                        class="nav-item nav-link bg-primary text-white px-5 ms-3 d-none d-lg-block">Solicitar
+                        Presupuesto <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- Usa tus imágenes grandes de proyectos -->
+                    <img class="w-100" src="img/img2.jpg" alt="Reforma integral en Bilbao" />
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <i class="fa fa-home fa-3x text-primary mb-3 d-none d-sm-inline"></i>
+                            <h1 class="display-2 text-uppercase text-white mb-md-4 text-center">Construye tu hogar con
+                                confianza</h1>
+                            <a href="contact.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Solicitar
+                                Presupuesto</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/img3.jpg" alt="Proyecto de carpintería y baños" />
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <i class="fa fa-tools fa-3x text-primary mb-3 d-none d-sm-inline"></i>
+                            <h1 class="display-2 text-uppercase text-white mb-md-4 text-center">Calidad, plazo y
+                                transparencia</h1>
+                            <a href="contact.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Contactar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-6 px-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <h1 class="display-5 text-uppercase mb-4">Somos <span class="text-primary">líderes</span> en reformas y
+                    construcción</h1>
+                <h4 class="text-uppercase mb-3 text-body">Comprometidos con la calidad, la confianza y los resultados
+                    excepcionales</h4>
+                <p>En Ángel Reformas nos encargamos de todo el proceso de tu reforma: planificación, obra y acabados.
+                    Equipo
+                    profesional, materiales de calidad y una comunicación clara de principio a fin.</p>
+                <div class="row gx-5 py-2">
+                    <div class="col-sm-6 mb-2">
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Planificación profesional
+                        </p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Atención personalizada</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Materiales de calidad</p>
+                    </div>
+                    <div class="col-sm-6 mb-2">
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Entrega a tiempo</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Precios transparentes</p>
+                        <p class="fw-bold mb-2"><i class="fa fa-check text-primary me-3"></i>Garantía de satisfacción
+                        </p>
+                    </div>
+                </div>
+                <p class="mb-4">Trabajamos en Bilbao y alrededores, desde pequeños trabajos a reformas integrales y
+                    proyectos
+                    en caseríos.</p>
+                <img src="img/signature.jpg" alt="Firma" />
+            </div>
+            <div class="col-lg-5 pb-5" style="min-height: 400px;">
+                <div class="position-relative bg-dark-radial h-100 ms-5">
+                    <img class="position-absolute w-100 h-100 mt-5 ms-n5" src="img/nuestroespacio.jpg"
+                        style="object-fit: cover;" alt="Ángel Reformas - equipo" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid bg-light py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+            <h1 class="display-5 text-uppercase mb-4">Nuestros <span class="text-primary">Servicios</span> principales
+            </h1>
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="img/service-1.jpg" alt="Albañilería" />
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-building text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3">Albañilería</h4>
+                        <p>Tabiques, soleras, alicatados, enfoscados y estructuras ligeras con acabados de primera.</p>
+                        <a class="btn text-primary" href="service.html">Ver más <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="img/service-2.jpg" alt="Carpintería" />
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-home text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3">Carpintería</h4>
+                        <p>Puertas, armarios, suelos y soluciones a medida en madera y laminados.</p>
+                        <a class="btn text-primary" href="service.html">Ver más <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="img/service-3.jpg" alt="Baños y cocinas" />
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-drafting-compass text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3">Baños y cocinas</h4>
+                        <p>Especialistas en reformas completas: fontanería, electricidad, mobiliario e iluminación.</p>
+                        <a class="btn text-primary" href="service.html">Ver más <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="img/service-4.jpg" alt="Caseríos" />
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-palette text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3">Caseríos</h4>
+                        <p>Rehabilitación y puesta a punto respetando la esencia, con mejoras de eficiencia.</p>
+                        <a class="btn text-primary" href="service.html">Ver más <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="img/service-5.jpg" alt="Impermeabilización de tejados" />
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-tools text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3">Impermeabilización de tejados</h4>
+                        <p>Tratamientos, láminas y soluciones duraderas para evitar filtraciones y humedades.</p>
+                        <a class="btn text-primary" href="service.html">Ver más <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
+                    <img class="img-fluid" src="img/service-6.jpg" alt="Pintura y acabados" />
+                    <div class="service-icon bg-white">
+                        <i class="fa fa-3x fa-paint-brush text-primary"></i>
+                    </div>
+                    <div class="px-4 pb-4">
+                        <h4 class="text-uppercase mb-3">Pintura y acabados</h4>
+                        <p>Pintura interior/exterior y decoración para un resultado impecable.</p>
+                        <a class="btn text-primary" href="service.html">Ver más <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Quote / Appointment Start -->
+    <div class="container-fluid py-6 px-5">
+        <div class="row gx-5">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="mb-4">
+                    <h1 class="display-5 text-uppercase mb-4">Pide tu <span class="text-primary">presupuesto</span></h1>
+                </div>
+                <p class="mb-5">Cuéntanos tu proyecto y te asesoramos sin compromiso. Podemos visitarte para tomar
+                    medidas y
+                    proponerte soluciones.</p>
+                <a class="btn btn-primary py-3 px-5" href="contact.html">Contactar</a>
+            </div>
+            <div class="col-lg-8">
+                <div class="bg-light text-center p-5">
+                    <form action="contact.html">
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0" placeholder="Tu nombre"
+                                    style="height: 55px;" />
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" class="form-control border-0" placeholder="Tu email"
+                                    style="height: 55px;" />
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0" placeholder="Teléfono"
+                                    style="height: 55px;" />
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control border-0" placeholder="Localidad"
+                                    style="height: 55px;" />
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control border-0" rows="5"
+                                    placeholder="Cuéntanos brevemente tu reforma"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Enviar solicitud</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+    <!-- Portfolio Grid Start -->
+    <div class="row g-4 portfolio-container justify-content-center">
+
+        <!-- Reforma de salón -->
+        <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item alb">
+            <div class="position-relative portfolio-box shadow-sm rounded overflow-hidden">
+                <img class="img-fluid w-100" src="img/salon1.jpg" alt="Reforma de salón">
+                <a class="portfolio-title shadow-sm text-center bg-white py-2" href="#">
+                    <p class="h5 text-uppercase mb-1">Reforma de salón</p>
+
+                </a>
+                <a class="portfolio-btn" href="img/salon1.jpg" data-lightbox="salon">
+                    <i class="bi bi-plus text-white"></i>
+                </a>
+                <a href="img/salon2.jpg" data-lightbox="salon" style="display:none;"></a>
+                <a href="img/salon3.jpg" data-lightbox="salon" style="display:none;"></a>
+                <a href="img/salon4.jpg" data-lightbox="salon" style="display:none;"></a>
+                <a href="img/salon5.jpg" data-lightbox="salon" style="display:none;"></a>
+                <a href="img/salon6.jpg" data-lightbox="salon" style="display:none;"></a>
+                <a href="img/salon7.jpg" data-lightbox="salon" style="display:none;"></a>
+            </div>
+        </div>
+
+        <!-- Baño completo -->
+        <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item ban">
+            <div class="position-relative portfolio-box shadow-sm rounded overflow-hidden">
+                <img class="img-fluid w-100" src="img/bano1.jpg" alt="Baño completo">
+                <a class="portfolio-title shadow-sm text-center bg-white py-2" href="#">
+                    <p class="h5 text-uppercase mb-1">Baño completo</p>
+
+                </a>
+                <a class="portfolio-btn" href="img/bano1.jpg" data-lightbox="bano"><i
+                        class="bi bi-plus text-white"></i></a>
+                <a href="img/bano2.jpg" data-lightbox="bano" style="display:none;"></a>
+                <a href="img/bano3.jpg" data-lightbox="bano" style="display:none;"></a>
+                <a href="img/bano4.jpg" data-lightbox="bano" style="display:none;"></a>
+                <a href="img/bano5.jpg" data-lightbox="bano" style="display:none;"></a>
+                <a href="img/bano6.jpg" data-lightbox="bano" style="display:none;"></a>
+                <a href="img/bano7.jpg" data-lightbox="bano" style="display:none;"></a>
+            </div>
+        </div>
+
+        <!-- Caserío rehabilitado -->
+        <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item cas">
+            <div class="position-relative portfolio-box shadow-sm rounded overflow-hidden">
+                <img class="img-fluid w-100" src="img/caserio1.jpeg" alt="Caserío rehabilitado">
+                <a class="portfolio-title shadow-sm text-center bg-white py-2" href="#">
+                    <p class="h5 text-uppercase mb-1">Rehabilitación de caserío</p>
+
+                </a>
+                <a class="portfolio-btn" href="img/caserio1.jpeg" data-lightbox="caserio"><i
+                        class="bi bi-plus text-white"></i></a>
+                <a href="img/caserio2.jpeg" data-lightbox="caserio" style="display:none;"></a>
+                <a href="img/caserio3.jpg" data-lightbox="caserio" style="display:none;"></a>
+                <a href="img/caserio4.jpeg" data-lightbox="caserio" style="display:none;"></a>
+                <a href="img/caserio5.jpeg" data-lightbox="caserio" style="display:none;"></a>
+                <a href="img/caserio6.jpg" data-lightbox="caserio" style="display:none;"></a>
+                <a href="img/caserio7.jpg" data-lightbox="caserio" style="display:none;"></a>
+                <a href="img/caserio8.jpg" data-lightbox="caserio" style="display:none;"></a>
+                <a href="img/caserio9.jpg" data-lightbox="caserio" style="display:none;"></a>
+            </div>
+        </div>
+
+        <!-- Cocina abierta -->
+        <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item alb">
+            <div class="position-relative portfolio-box shadow-sm rounded overflow-hidden">
+                <img class="img-fluid w-100" src="img/cocina1.jpg" alt="Cocina abierta">
+                <a class="portfolio-title shadow-sm text-center bg-white py-2" href="#">
+                    <p class="h5 text-uppercase mb-1">Cocina abierta</p>
+
+                </a>
+                <a class="portfolio-btn" href="img/cocina1.jpg" data-lightbox="cocina"><i
+                        class="bi bi-plus text-white"></i></a>
+                <a href="img/cocina2.jpg" data-lightbox="cocina" style="display:none;"></a>
+                <a href="img/cocina3.jpg" data-lightbox="cocina" style="display:none;"></a>
+                <a href="img/cocina4.jpg" data-lightbox="cocina" style="display:none;"></a>
+                <a href="img/cocina5.jpg" data-lightbox="cocina" style="display:none;"></a>
+                <a href="img/cocina6.jpg" data-lightbox="cocina" style="display:none;"></a>
+            </div>
+        </div>
+
+        <!-- Tejado impermeabilizado -->
+        <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item tej">
+            <div class="position-relative portfolio-box shadow-sm rounded overflow-hidden">
+                <img class="img-fluid w-100" src="img/img15.jpg" alt="Tejado impermeabilizado">
+                <a class="portfolio-title shadow-sm text-center bg-white py-2" href="#">
+                    <p class="h5 text-uppercase mb-1">Tejado impermeabilizado</p>
+
+                </a>
+                <a class="portfolio-btn" href="img/img15.jpg" data-lightbox="tejado"><i
+                        class="bi bi-plus text-white"></i></a>
+                <a href="img/img16.jpg" data-lightbox="tejado" style="display:none;"></a>
+                <a href="img/img17.jpg" data-lightbox="tejado" style="display:none;"></a>
+                <a href="img/img18.jpg" data-lightbox="tejado" style="display:none;"></a>
+                <a href="img/img19.jpg" data-lightbox="tejado" style="display:none;"></a>
+                <a href="img/img20.jpg" data-lightbox="tejado" style="display:none;"></a>
+            </div>
+        </div>
+
+        <!-- Carpintería -->
+        <div class="col-xl-4 col-lg-6 col-md-6 portfolio-item carp">
+            <div class="position-relative portfolio-box shadow-sm rounded overflow-hidden">
+                <img class="img-fluid w-100" src="img/armariosamedida1.jpg" alt="Carpintería">
+                <a class="portfolio-title shadow-sm text-center bg-white py-2" href="#">
+                    <p class="h5 text-uppercase mb-1">Carpintería</p>
+                    >
+                </a>
+                <a class="portfolio-btn" href="img/armariosamedida1.jpg" data-lightbox="carpinteria"><i
+                        class="bi bi-plus text-white"></i></a>
+                <a href="img/armariosamedida2.jpg" data-lightbox="carpinteria" style="display:none;"></a>
+                <a href="img/armariosamedida3.jpg" data-lightbox="carpinteria" style="display:none;"></a>
+                <a href="img/armariosamedida4.jpg" data-lightbox="carpinteria" style="display:none;"></a>
+                <a href="img/suelospuertas1.jpg" data-lightbox="carpinteria" style="display:none;"></a>
+                <a href="img/suelospuertas2.jpg" data-lightbox="carpinteria" style="display:none;"></a>
+                <a href="img/suelospuertas3.jpg" data-lightbox="carpinteria" style="display:none;"></a>
+            </div>
+        </div>
+
+    </div>
+    <!-- Portfolio Grid End -->
+
+    <!-- Testimonial Start (igual al template, sin cambios de estructura) -->
+    <div class="container-fluid bg-light py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 text-uppercase mb-4">Lo que nuestros <span class="text-primary">clientes</span> dicen
+            </h1>
+        </div>
+        <div class="row gx-0 align-items-center">
+            <div class="col-xl-4 col-lg-5 d-none d-lg-block">
+
+            </div>
+            <div class="col-xl-8 col-lg-7 col-md-12">
+                <div class="testimonial bg-light">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="row gx-4 align-items-center">
+                            <div class="col-xl-4 col-lg-5 col-md-5">
+                                <img class="img-fluid w-100 h-100 bg-light p-lg-3 mb-4 mb-md-0"
+                                    src="img/testimonial-1.jpg" alt="">
+                            </div>
+                            <div class="col-xl-8 col-lg-7 col-md-7">
+                                <h4 class="text-uppercase mb-0">María G.</h4>
+                                <p>Reforma de cocina</p>
+                                <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i>Muy
+                                    profesionales y
+                                    limpios. La cocina quedó perfecta y a tiempo.</p>
+                            </div>
+                        </div>
+                        <div class="row gx-4 align-items-center">
+                            <div class="col-xl-4 col-lg-5 col-md-5">
+                                <img class="img-fluid w-100 h-100 bg-light p-lg-3 mb-4 mb-md-0"
+                                    src="img/testimonial-2.jpg" alt="">
+                            </div>
+                            <div class="col-xl-8 col-lg-7 col-md-7">
+                                <h4 class="text-uppercase mb-0">Iñaki R.</h4>
+                                <p>Impermeabilización</p>
+                                <p class="fs-5 mb-0"><i class="fa fa-2x fa-quote-left text-primary me-2"></i>Sin
+                                    filtraciones desde la
+                                    obra. Explican todo y cumplen plazos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <div class="footer container-fluid position-relative bg-dark bg-light-radial text-white-50 py-6 px-5">
+        <div class="row g-5">
+            <div class="col-lg-6 pe-lg-5">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="m-0 display-4 text-uppercase text-white"><i
+                            class="bi bi-building text-primary me-2"></i>ÁNGEL
+                        REFORMAS</h1>
+                </a>
+                <p>Transformamos espacios con calidad, seriedad y precios claros. Trabajamos en Bilbao y Bizkaia.</p>
+                <p><i class="fa fa-map-marker-alt me-2"></i>Fika 50, Bajos B, 48006 Bilbao</p>
+                <p><i class="fa fa-phone-alt me-2"></i>+34 614 027 889 · +34 614 021 558</p>
+                <p><i class="fa fa-envelope me-2"></i>contacto@angelreformasbinacional.es</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0 me-2" href="#"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-0" href="#"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 ps-lg-5">
+                <div class="row g-5">
+                    <div class="col-sm-6">
+                        <h4 class="text-white text-uppercase mb-4">Enlaces</h4>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Inicio</a>
+                            <a class="text-white-50 mb-2" href="about.html"><i class="fa fa-angle-right me-2"></i>Sobre
+                                nosotros</a>
+                            <a class="text-white-50 mb-2" href="service.html"><i
+                                    class="fa fa-angle-right me-2"></i>Servicios</a>
+                            <a class="text-white-50 mb-2" href="project.html"><i
+                                    class="fa fa-angle-right me-2"></i>Proyectos</a>
+                            <a class="text-white-50" href="contact.html"><i
+                                    class="fa fa-angle-right me-2"></i>Contacto</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <h4 class="text-white text-uppercase mb-4">Atención</h4>
+                        <p class="text-white-50">Lunes a Viernes: 9:00–19:00</p>
+                        <p class="text-white-50">Sábados: 10:00–14:00</p>
+                        <p class="text-white-50">Bizkaia y alrededores</p>
+                    </div>
+                    <div class="col-sm-12">
+                        <h4 class="text-white text-uppercase mb-4">Newsletter</h4>
+                        <div class="w-100">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-light" style="padding: 20px 30px;"
+                                    placeholder="Tu email" /><button class="btn btn-primary px-4">Apuntarme</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark bg-light-radial text-white border-top border-primary px-0">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="py-4 px-5 text-center text-md-start">
+                <p class="mb-0">&copy; <a class="text-primary" href="#">Ángel Reformas</a>. Todos los derechos
+                    reservados.</p>
+            </div>
+            <div class="py-4 px-5 bg-primary footer-shape position-relative text-center text-md-end">
+                <p class="mb-0">Plantilla basada en HTML Codex</p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

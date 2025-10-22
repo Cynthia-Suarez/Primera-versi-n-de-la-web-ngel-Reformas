@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Servicios - Ángel Reformas</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta
+        content="reformas integrales, electricidad, fontanería, carpintería, albañilería, impermeabilización, baños, cocinas, caseríos"
+        name="keywords">
+    <meta content="Servicios de reformas integrales y mantenimiento en Bilbao, Bizkaia." name="description">
+
+    <link href="img/favicon.ico" rel="icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Lightbox -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+    <style>
+        .navbar-brand img {
+            height: 70px;
+            width: auto;
+        }
+
+        .service-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .portfolio-box {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.7);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: 0.3s ease;
+        }
+
+        .portfolio-box:hover .portfolio-btn {
+            opacity: 1;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            width: 56px;
+            height: 56px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            z-index: 1000;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, .2);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="container-fluid sticky-top bg-dark shadow-sm px-5 pe-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/logo-angelreformas.png" alt="Ángel Reformas">
+                <span class="text-white fw-bold h4 ms-2">ÁNGEL REFORMAS</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Inicio</a>
+                    <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
+                    <a href="service.html" class="nav-item nav-link active">Servicios</a>
+                    <a href="project.html" class="nav-item nav-link">Proyectos</a>
+                    <a href="testimonial.html" class="nav-item nav-link">Testimonios</a>
+                    <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                    <a href="contact.html" class="nav-item nav-link bg-primary text-white px-4 ms-3 d-none d-lg-block">
+                        Solicitar Presupuesto <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Encabezado -->
+    <div class="page-header mb-0"
+        style="background: linear-gradient(rgba(15,23,42,.8), rgba(15,23,42,.8)), url('img/service-bg.jpg') center/cover; padding: 60px 0;">
+        <div class="container text-center">
+            <h1 class="display-4 text-uppercase text-white mb-0">SERVICIOS</h1>
+        </div>
+    </div>
+
+    <!-- Servicios -->
+    <div class="container py-5">
+        <div class="row g-5 text-center">
+            <div class="col-lg-3 col-md-6 text-center">
+                <i class="fa fa-bolt fa-3x text-primary mb-3"></i>
+                <h5 class="text-uppercase mb-3">Electricidad y Fontanería</h5>
+                <p>Instalaciones eléctricas y de agua seguras y modernas.</p>
+                <img src="img/electricidad-fontaneria.jpeg" alt="Electricidad y Fontanería" class="service-img">
+            </div>
+
+            <div class="col-lg-3 col-md-6 text-center">
+                <i class="fa fa-paint-roller fa-3x text-primary mb-3"></i>
+                <h5 class="text-uppercase mb-3">Pintura y Acabados</h5>
+                <p>Decorativos, estucos y microcemento con acabados de primera calidad.</p>
+                <img src="img/pintura-acabados.jpg" alt="Pintura y Acabados" class="service-img">
+            </div>
+
+            <div class="col-lg-3 col-md-6 text-center">
+                <i class="fa fa-tools fa-3x text-primary mb-3"></i>
+                <h5 class="text-uppercase mb-3">Albañilería</h5>
+                <p>Reparaciones, tabiques, suelos y fachadas profesionales.</p>
+                <img src="img/albanileria.jpeg" alt="Albañilería" class="service-img">
+            </div>
+
+            <div class="col-lg-3 col-md-6 text-center">
+                <i class="fa fa-hammer fa-3x text-primary mb-3"></i>
+                <h5 class="text-uppercase mb-3">Carpintería</h5>
+                <p>Puertas, armarios y muebles a medida con acabados resistentes.</p>
+                <img src="img/carpinteria.jpg" alt="Carpintería" class="service-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="container">
+        <div class="row g-4 portfolio-container justify-content-center">
+
+            <!-- Reforma de salón -->
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="position-relative portfolio-box shadow-sm rounded overflow-hidden">
+                    <img class="img-fluid w-100" src="img/salon1.jpg" alt="Reforma de salón">
+                    <a href="img/salon1.jpg" data-lightbox="salon" class="portfolio-btn"><i
+                            class="bi bi-plus text-white"></i></a>
+                    <a href="img/salon2.jpg" data-lightbox="salon"></a>
+                    <a href="img/salon3.jpg" data-lightbox="salon"></a>
+                    <a href="img/salon4.jpg" data-lightbox="salon"></a>
+                    <a href="img/salon5.jpg" data-lightbox="salon"></a>
+                    <a href="img/salon6.jpg" data-lightbox="salon"></a>
+                    <a href="img/salon7.jpg" data-lightbox="salon"></a>
+                </div>
+                <p class="h5 text-uppercase text-center mt-2">Reforma de salón</p>
+            </div>
+
+            <!-- Baño completo -->
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="position-relative portfolio-box shadow-sm rounded overflow-hidden">
+                    <img class="img-fluid w-100" src="img/bano1.jpg" alt="Baño completo">
+                    <a href="img/bano1.jpg" data-lightbox="bano" class="portfolio-btn"><i
+                            class="bi bi-plus text-white"></i></a>
+                    <a href="img/bano2.jpg" data-lightbox="bano"></a>
+                    <a href="img/bano3.jpg" data-lightbox="bano"></a>
+                    <a href="img/bano4.jpg" data-lightbox="bano"></a>
+                    <a href="img/bano5.jpg" data-lightbox="bano"></a>
+                    <a href="img/bano6.jpg" data-lightbox="bano"></a>
+                    <a href="img/bano7.jpg" data-lightbox="bano"></a>
+                </div>
+                <p class="h5 text-uppercase text-center mt-2">Baño completo</p>
+            </div>
+
+            <!-- Caserío -->
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="position-relative portfolio-box shadow-sm rounded overflow-hidden">
+                    <img class="img-fluid w-100" src="img/caserio1.jpeg" alt="Rehabilitación de caserío">
+                    <a href="img/caserio1.jpeg" data-lightbox="caserio" class="portfolio-btn"><i
+                            class="bi bi-plus text-white"></i></a>
+                    <a href="img/caserio2.jpeg" data-lightbox="caserio"></a>
+                    <a href="img/caserio3.jpg" data-lightbox="caserio"></a>
+                    <a href="img/caserio4.jpeg" data-lightbox="caserio"></a>
+                    <a href="img/caserio5.jpeg" data-lightbox="caserio"></a>
+                    <a href="img/caserio6.jpg" data-lightbox="caserio"></a>
+                    <a href="img/caserio7.jpg" data-lightbox="caserio"></a>
+                    <a href="img/caserio8.jpg" data-lightbox="caserio"></a>
+                    <a href="img/caserio9.jpg" data-lightbox="caserio"></a>
+                </div>
+                <p class="h5 text-uppercase text-center mt-2">Rehabilitación de caserío</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer container-fluid position-relative bg-dark text-white-50 py-6 px-5">
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <h4 class="text-white text-uppercase mb-4">Contacto</h4>
+                <p><i class="fa fa-map-marker-alt me-2"></i>Fika 50, Bajos B, Bilbao</p>
+                <p><i class="fa fa-phone-alt me-2"></i>+34 614 027 889</p>
+                <p><i class="fa fa-envelope me-2"></i>contacto@angelreformasbinacional.es</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp -->
+    <a class="whatsapp-float" href="https://wa.me/34614027889" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+</body>
+
+</html>
